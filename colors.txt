@@ -1,1 +1,0 @@
-background: linear-gradient(90deg, #5374fa 7%, #ff6969 79%);
