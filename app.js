@@ -19,7 +19,7 @@ const pincodeSectionEl = document.getElementById("pincodeSection");
 class PinCode {
     /**
      *
-     * @param {object} parentDOM - Provide the Parent element where all the created element will be appended
+     * @param {html element} parentDOM - Provide the Parent element where all the created element will be appended
      * @param {string} authorName - The name of email sender
      * @param {string} serviceId - EmailJS Service Id
      * @param {string} templateId - EmailJS Template Id
@@ -85,6 +85,14 @@ class PinCode {
                         <div class="round3"></div>
                     </div>
                 </div>
+                <div class="authorText">
+                <p>
+                    build with 💜 by
+                    <a target="_blank" href="https://saminyasar.netlify.app/"
+                        >samin yasar</a
+                    >
+                </p>
+            </div>
 `;
         this.parentDOM.appendChild(containerEl);
 

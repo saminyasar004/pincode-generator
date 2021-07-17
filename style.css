@@ -203,3 +203,28 @@ body {
         transform: scale(0.8);
     }
 }
+
+.authorText {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3%;
+    color: #fff;
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+.authorText p {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.authorText p a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.authorText p a:hover {
+    text-decoration: underline;
+}
