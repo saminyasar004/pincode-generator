@@ -280,7 +280,9 @@ class PinCode {
         this.intervalId = setInterval(() => {
             if (this.globalSeconds > 0) {
                 this.globalSeconds--;
-                let timeRecords = this.getTimer(this.globalSeconds);
+                let timeRecords = {
+                    seconds: this.globalSeconds,
+                };
                 this.updateDisplay.call(this, timeRecords);
             } else {
                 this.stopTimer.call(this);
@@ -301,18 +303,6 @@ class PinCode {
             timeRecords.seconds < 10
                 ? `0${timeRecords.seconds} second`
                 : `${timeRecords.seconds} seconds`;
-    }
-
-    /**
-     *
-     * @param {number} sec - The Global Seconds
-     * @returns {object} - An Object with current seconds
-     */
-    getTimer(sec) {
-        let seconds = parseInt(sec % 60);
-        return {
-            seconds,
-        };
     }
 }
 
